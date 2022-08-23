@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  background-color: #ff9a4b;
+}
+
+main {
+  width: 960px;
+  display: flex;
+  margin: 50px auto;
+}
+
+.flow-box {
+  width: 300px;
+  background-color: #eeeeee;
+  padding: 10px;
+  position: relative;
+  margin-right: 30px;
+}
+
+.flow-box:last-child {
+  margin-right: 0;
+}
+
+.flow-title {
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+.flow1-image {
+  height: 150px;
+  background-image: url(img/flow01.png);
+  padding: 10px 10px;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.flow2-image {
+  height: 150px;
+  background-image: url(img/flow02.png);
+  padding: 10px 10px;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.flow3-image {
+  height: 150px;
+  background-image: url(img/flow03.png);
+  padding: 10px 10px;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.flow-num {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ff9a4b;
+  color: #fff;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #aaaaaa;
+}
+
+/* 768px以下のとき */
+@media screen and (max-width:768px) {
+  main {
+    width: 100%; 
+    display: block;
+    margin: 50px 0;
+  }
+  .flow-box {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .flow-box:nth-child(2){
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .flow-box:last-child {
+    margin-right: auto;
+  }
+  
+}
